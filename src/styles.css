@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header CSS */
+.jumbotron {
+    padding-top: 20px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    color: #333741 !important;
+}
+
+.jumbotron p {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 575px) {
+
+    .jumbotron h1 {
+        font-size: 56px;
+    }
+
+    .jumbotron p {
+        font-size: 18px;
+    }
+}

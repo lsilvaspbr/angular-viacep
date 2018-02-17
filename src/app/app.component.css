@@ -1,0 +1,17 @@
+h1 {
+    color: gainsboro;
+}
+
+footer {
+    height: 40px;
+    margin-top: 20px;
+    padding-top: 8px;
+    text-align: center;
+    background-color: #262B32;
+    color: #CFCCC0;
+}
+
+p.footer {
+    margin: none !important;
+    padding: none !important;
+}

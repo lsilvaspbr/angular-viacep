@@ -1,0 +1,71 @@
+<form>
+    <div class="card" style="padding: 20px;">
+        <div class="form-row">
+            <div class="error-msg" [hidden]="errorMsgHide">
+              <p>CEP não encontrado!</p>
+            </div>
+            <div class="info-msg" [hidden]="!errorMsgHide">
+                <p>Informe o CEP para iniciar a busca:</p>
+              </div>
+            <div class="form-group row">
+                <label class="col-3" for="cep">CEP:</label>
+                <div class="col-9">
+                    <input class="form-control form-control-sm" type="text" name="cep" id="cep" #inputCep (keyup)="validateCep(inputCep.value)" [textMask]="{mask: mask}" [(ngModel)]="myModel" placeholder="digite o CEP..." autofocus>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3" for="street">Logradouro:</label>
+                <div class="col-9">
+                    <input class="form-control form-control-sm" type="text" name="street" id="street" [value]="this.street" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3" for="street">Complemento:</label>
+                <div class="col-9">
+                    <input class="form-control form-control-sm" type="text" name="complement" id="complement" [value]="this.complement" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3" for="neighborhood">Bairro:</label>
+                <div class="col-9">
+                    <input class="form-control form-control-sm" type="text" name="neighborhood" id="neighborhood" [value]="this.neighborhood" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3" for="city">Localidade:</label>
+                <div class="col-9">
+                    <input class="form-control form-control-sm" type="text" name="locale" id="locale" [value]="this.locale" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3" for="state">UF:</label>
+                <div class="col-9">
+                    <input class="form-control form-control-sm" type="text" name="state" id="state" [value]="this.state" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3" for="ibge">Unidade:</label>
+                <div class="col-9">
+                    <input class="form-control form-control-sm" type="text" name="unit" id="unit" [value]="this.unit" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3" for="gia">IBGE:</label>
+                <div class="col-9">
+                    <input class="form-control form-control-sm" type="text" name="ibge" id="ibge" [value]="this.ibge" readonly>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-3" for="gia">GIA:</label>
+                <div class="col-9">
+                    <input class="form-control form-control-sm" type="text" name="gia" id="gia" [value]="this.gia" readonly>
+                </div>
+            </div>
+			<div class="form-group row">
+                <div class="col-12">
+                    <button class="btn btn-primary btn-sm" (click)="newSearch()">Nova consulta</button>
+                </div>
+            </div>
+		</div>
+    </div>
+</form>

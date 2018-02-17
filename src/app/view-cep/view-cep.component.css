@@ -1,0 +1,54 @@
+.card {
+    padding-bottom: 0 !important;
+}
+
+form {
+    width: 540px;
+    margin: 0 auto;
+}
+
+button {
+    width: 100%;
+}
+
+.error-msg {
+    color: red;
+    font-weight: bold;
+}
+
+.info-msg {
+    color: rgb(79, 84, 85);
+    font-weight: bold;
+}
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+
+    .card {
+        border: none;
+    }
+
+    form {
+        width: 320px;
+        max-width: 320px;
+    }
+
+    .col-3 {
+        max-width: none !important;
+    }
+
+    .col-9 {
+        max-width: none !important;
+        flex: none !important;
+    }
+
+    label {
+        flex: none !important;
+        margin-bottom: 2px;
+    }
+
+    button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
