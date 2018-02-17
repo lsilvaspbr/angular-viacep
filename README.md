@@ -1,4 +1,8 @@
-# AngularViacep
+# Angular ViaCep
+
+Consuming a RESTful API from an simple Angular application.
+
+## Demo http://lweb.com.br/prj-viacep/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
